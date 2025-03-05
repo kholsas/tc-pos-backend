@@ -12,6 +12,7 @@ public class Product {
     private int stock;
 
     public Product() {}
+
     public Product(String barcode, String name, double price, int stock) {
         this.barcode = barcode;
         this.name = name;

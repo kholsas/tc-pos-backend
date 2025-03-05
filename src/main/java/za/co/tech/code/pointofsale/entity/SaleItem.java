@@ -16,6 +16,7 @@ public class SaleItem {
     private double subtotal;
 
     public SaleItem() {}
+
     public SaleItem(Product product, int quantity, double subtotal) {
         this.product = product;
         this.quantity = quantity;
