@@ -35,4 +35,9 @@ public class PosController {
         Sale sale = new Sale(LocalDateTime.now(), total, items);
         return saleRepository.save(sale);
     }
+
+    @GetMapping("/products/search")
+    public List<Product> searchProducts(@RequestParam("name") String name) {
+        return productRepository.findByNameContainingIgnoreCase(name);
+    }
 }
